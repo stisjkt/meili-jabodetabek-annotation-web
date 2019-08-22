@@ -1,0 +1,46 @@
+
+<center>
+<div style="height:100%;padding:75px 0;background: url('/images/bg.jpg')no-repeat center center fixed;margin-left: 0px;margin-right: 0px; background-size: cover;">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 lang="en" class="text-center login-title">Silakan Login untuk memulai anotasi perjalanan Anda</h1>
+            <div class="account-wall">
+                <img class="profile-img" src="../images/avatar.png" alt="">
+                <form class="form-signin">
+                    <input id="email" type="email"     class="form-control" placeholder="Email"   required name="username" autofocus>
+                    <input id="pw" type="password"  class="form-control" placeholder="Password" required name="password">
+                    <input id="remember" type="checkbox"> Remember me
+                    <div style="padding: 10px"></div>
+                    <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</center>
+
+<script>
+function loadingOverlay(){
+    $.LoadingOverlay("show");
+    setTimeout(function () {
+      $.LoadingOverlay("hide");
+    }, 500);
+}
+
+$(function () {
+    loadingOverlay();
+    if (localStorage.username && localStorage.pass != '') {
+        //kondisi remember me dan sudah logout
+        $('#remember').attr('checked', 'checked');
+        $('#email').val(localStorage.username);
+        $('#pw').val(localStorage.pass);
+    } else {
+        $('#remember').removeAttr('checked');
+        $('#email').val('');
+        $('#pw').val('');
+    }
+});
+
+  $("#right-nav").html("");
+
+</script>

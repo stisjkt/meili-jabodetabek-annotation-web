@@ -1,0 +1,60 @@
+node_modules
+npm-debug.log
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+MEILI-Travel-Diary/.idea/
+
+# Sensitive or high-churn files:
+#.idea/dataSources.ids
+#.idea/dataSources.xml
+#.idea/dataSources.local.xml
+#.idea/sqlDataSources.xml
+#.idea/dynamic.xml
+#.idea/uiDesigner.xml
+
+# Gradle:
+#.idea/gradle.xml
+#.idea/libraries
+
+# Mongo Explorer plugin:
+#.idea/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+MEILI-Travel-Diary/.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+/.project
+
+# Instance config
+MEILI-Travel-Diary/bin/
+
+# Nodejs modules
+MEILI-Travel-Diary/package-lock.json
+MEILI-Travel-Diary/node_modules/
+
+# Database config
+MEILI-Travel-Diary/routes/database.js
+
+# Download raw data config
+MEILI-Travel-Diary/routes/apiv2/tests.js
+
+# Raw data export
+MEILI-Travel-Diary/public/rawdata
+.DS_Store
